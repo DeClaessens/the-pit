@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://bjwbj5jytg046"]
+
+[ext_resource type="Texture2D" uid="uid://6yo3m4f0507r" path="res://Assets/kenney_desert-shooter-pack_1.0/PNG/Players/Tiles/tile_0004.png" id="1_0hol4"]
+[ext_resource type="Texture2D" uid="uid://be0qp2cu0xiv5" path="res://Assets/kenney_desert-shooter-pack_1.0/PNG/Players/Tiles/tile_0005.png" id="2_q6r6c"]
+[ext_resource type="Texture2D" uid="uid://bknkvtqevmf5j" path="res://Assets/kenney_desert-shooter-pack_1.0/PNG/Players/Tiles/tile_0006.png" id="3_kdubu"]
+[ext_resource type="Texture2D" uid="uid://dna1015s8yxc7" path="res://Assets/kenney_desert-shooter-pack_1.0/PNG/Players/Tiles/tile_0007.png" id="4_d21ai"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rj586"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0hol4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_q6r6c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_kdubu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_d21ai")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(12, 20)
+sprite_frames = SubResource("SpriteFrames_rj586")
