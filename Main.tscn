@@ -4,5 +4,11 @@
 
 [node name="Main" type="Node2D"]
 
+[node name="Camera2D" type="Camera2D" parent="."]
+scale = Vector2(0.6995348, 0.695211)
+zoom = Vector2(3, 3)
+
 [node name="Player" parent="." instance=ExtResource("1_glv2v")]
-position = Vector2(524, 295)
+position = Vector2(3, -3)
+speed = 250
+acceleration = 2000
