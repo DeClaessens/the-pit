@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://dk7si6e3pfxv3"]
+
+[ext_resource type="Texture2D" uid="uid://csxbb67f7gpqh" path="res://Assets/kenney_desert-shooter-pack_1.0/PNG/Players/Tiles/tile_0012.png" id="1_vonkd"]
+[ext_resource type="Script" uid="uid://dvrp4327fs1e2" path="res://Enemy/enemy.gd" id="1_vso2s"]
+[ext_resource type="Texture2D" uid="uid://buw2lyca2qxdo" path="res://Assets/kenney_desert-shooter-pack_1.0/PNG/Players/Tiles/tile_0013.png" id="2_vso2s"]
+[ext_resource type="Texture2D" uid="uid://dolukj0lgyyrc" path="res://Assets/kenney_desert-shooter-pack_1.0/PNG/Players/Tiles/tile_0014.png" id="3_fkela"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d2k2y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_vonkd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_vso2s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fkela")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Enemy" type="CharacterBody2D"]
+script = ExtResource("1_vso2s")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_d2k2y")
